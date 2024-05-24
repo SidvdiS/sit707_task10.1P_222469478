@@ -38,5 +38,5 @@ jobs:
             Workflow: ${{ github.workflow }}.
             Repository: ${{ github.repository }}.
             Commit: ${{ github.sha }}.
-          to: siddharthv4075.sv@gmail.com
+          to: siddharthv1067@gmail.com
           from: siddharthv4075.sv@gmail.com
