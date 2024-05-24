@@ -30,13 +30,13 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 587
-          username: siddharthv4075.sv@gmail.com
-          password: 3lack@Yit3
+          username: ${{ secrets.EMAIL_ADDRESS }}
+          password: ${{ secrets.PASSWORD }}
           subject: Build Notification - ${{ job.status }}
           body: |
             The build status is: ${{ job.status }}.
             Workflow: ${{ github.workflow }}.
             Repository: ${{ github.repository }}.
             Commit: ${{ github.sha }}.
-          to: siddharthv4075.sv@gmail.com
-          from: siddharthv4075.sv@gmail.com
+          to: ${{ secrets.EMAIL_ADDRESS }}
+          from: ${{ secrets.EMAIL_ADDRESS }}
